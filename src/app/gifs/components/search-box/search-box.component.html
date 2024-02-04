@@ -2,8 +2,10 @@
 
 <input
   type="text"
-  name="Buscar"
+  name="buscar"
   id="buscar"
   class="form-control"
   placeholder="Buscar gifs..."
+  (keyup.enter)="searchTag(txtTagInput.value)"
+  #txtTagInput
 >
